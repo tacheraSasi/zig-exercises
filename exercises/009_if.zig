@@ -23,11 +23,13 @@ const std = @import("std");
 pub fn main() void {
     const foo = 1;
 
-    // Please fix this condition:
-    if (foo) {
-        // We want our program to print this message!
+    if (equals(foo, 1)) {
         std.debug.print("Foo is 1!\n", .{});
     } else {
         std.debug.print("Foo is not 1!\n", .{});
     }
+}
+
+pub fn equals(a: comptime_int, b: comptime_int) bool {
+    return a == b;
 }
