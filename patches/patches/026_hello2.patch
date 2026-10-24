@@ -1,9 +1,11 @@
---- exercises/026_hello2.zig	2025-07-22 09:55:51.337832401 +0200
-+++ answers/026_hello2.zig	2025-07-22 10:00:11.233348058 +0200
-@@ -23,5 +23,5 @@
+--- exercises/026_hello2.zig	2026-07-01 16:27:18.674459266 +0200
++++ answers/026_hello2.zig	2026-07-01 16:27:08.579220702 +0200
+@@ -28,7 +28,7 @@
      // to be able to pass it up as a return value of main().
      //
      // We just learned of a single statement which can accomplish this.
--    stdout.interface.print("Hello world!\n", .{});
-+    try stdout.interface.print("Hello world!\n", .{});
+-    stdout.print("Hello world!\n", .{});
++    try stdout.print("Hello world!\n", .{});
  }
+ 
+ // Now you must be thinking "Why would I need to do this instead of good

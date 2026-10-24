@@ -8,11 +8,11 @@ of Ziglings Maintenance!
 
 Ziglings is intended for programmers of all experience levels. No
 specific language knowledge is expected. Anyone who can install
-the current Zig snapshot, setup a copy of Ziglings, and knows
+the current Zig snapshot, set up a copy of Ziglings, and knows
 common language building blocks (if/then/else, loops, and
 functions) is ready for Ziglings.
 
-Zigling's excercises are self-contained. If you can't solve
+Zigling's exercises are self-contained. If you can't solve
 an exercise from the information you've gleaned so far from
 Ziglings, then the exercise probably needs some additional work.
 Please file an issue!
@@ -37,6 +37,23 @@ improved, don't hesitate to file an issue.
 Feel free to submit new exercises but please understand that they
 may be heavily edited or rejected entirely if we feel they don't
 fit for one reason or another.
+
+
+## AI-Generated Content
+
+We welcome contributions from non-native English speakers and
+appreciate the effort it takes to write in a foreign language.
+Using AI tools to polish your English is fine.
+
+What we don't accept is AI-generated exercises, AI-generated
+comments, or pull requests produced by coding agents. Ziglings
+exercises require understanding the Zig build system, the
+didactic progression, and the specific conventions of this
+project. That understanding doesn't come from a prompt.
+
+If we suspect a contribution is primarily AI-generated, we will
+close it.
+
 
 ## Platforms and Zig Versions
 
@@ -78,7 +95,7 @@ interface.  Specifically:
   eternal Ziglings contributor glory is yours!
 
 
-## Licence
+## License
 
 If you submit your contribution to the repository/project,
 you agree that your contribution will be licensed under
@@ -94,7 +111,7 @@ directory.
 
 Every Ziglings exercise contains mistakes on purpose.
 To keep our automated tests happy, each exercise also
-has a patch in `patches/healed` that “heals” it.
+has a patch in `patches/patches` that “heals” it.
 
 When you change an exercise, you will usually need to update
 its patch too. That’s where our little helper Gollum comes in:
@@ -102,12 +119,12 @@ its patch too. That’s where our little helper Gollum comes in:
   1. In the project root, create a folder called `answers/`
   2. Put your solved version of the exercise file in there
   3. Back in the root, run:
-     `./patches/gollum <exercise-number>`<br>
-     For example: `./patches/gollum 106`
+     `./patches/gollum.sh <exercise-number>`<br>
+     For example: `./patches/gollum.sh 106`
      This will generate a shiny new patch.
 
 Double-check everything by asking the magical Eowyn:
-`./patches/eowyn`<br>
+`./patches/eowyn.sh`<br>
 If all tests pass: You are done!
 
 Don’t forget to commit the patch file.
